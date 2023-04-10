@@ -29,3 +29,14 @@ export const createRecords = (zoneId: string): Record[] => {
 ```
 
 We leverage on Pulumi SaaS to store our stacks and config settings.
+
+## Testing
+
+This [branch](https://github.com/isomerpages/isomer-indirection/tree/test/github-actions-integration) is created for the purposes of testing. To add in DNS records in Cloudflare, follow the steps below:
+
+1. Add in a file (eg. blah.isomer.gov.sg) with the syntax described above
+2. Push new file to `origin/test/github-actions-integration`
+3. Verify that github actions is a success
+4. Verify new DNS record updated in Cloudflare
+5. Delete newly added file in step 1 in github locally
+6. Push changes to `origin/test/github-actions-integration`
