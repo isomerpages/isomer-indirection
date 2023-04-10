@@ -3,7 +3,7 @@ name: Deploy to Pulumi
 on:
   push:
     branches:
-      - main
+      - test/github-actions-integration
 
 jobs:
   deploy:
@@ -27,5 +27,5 @@ jobs:
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         run: |
-          pulumi stack select indirection-layer-prod
+          pulumi stack select indirection-layer-dev
           pulumi up --yes
