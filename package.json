@@ -1,0 +1,11 @@
+{
+  "name": "isomer-indirection",
+  "main": "index.ts",
+  "devDependencies": {
+    "@types/node": "^18"
+  },
+  "dependencies": {
+    "@pulumi/cloudflare": "^5.0.0",
+    "@pulumi/pulumi": "^3.19.0"
+  }
+}
