@@ -22,7 +22,7 @@ jobs:
           node-version: "18.x"
 
       - name: Install dependencies
-        run: yarn install
+        run: npm ci
 
       - name: Preview Pulumi changes
         env:
