@@ -38,3 +38,4 @@ jobs:
           command: preview
           comment-on-pr: false # let Pulumi Bot comment instead
           stack-name: indirection-layer-prod
+          refresh: true
