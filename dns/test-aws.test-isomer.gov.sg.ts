@@ -11,7 +11,7 @@ export const createRecords = (zoneId: string): Record[] => {
         {
           name: "d280dyp6teavt9.cloudfront.net",
           zoneId: CLOUDFRONT_HOSTED_ZONE_ID,
-          evaluateTargetHealth: true,
+          evaluateTargetHealth: false,
         },
       ],
     }),
@@ -24,7 +24,7 @@ export const createRecords = (zoneId: string): Record[] => {
         {
           name: "d280dyp6teavt9.cloudfront.net",
           zoneId: CLOUDFRONT_HOSTED_ZONE_ID,
-          evaluateTargetHealth: true,
+          evaluateTargetHealth: false,
         },
       ],
     }),
