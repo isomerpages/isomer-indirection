@@ -6,6 +6,7 @@ export const createRecords = (zoneId: string): Record[] => {
       name: "isomer-staging",
       type: "CNAME",
       zoneId: zoneId,
+      ttl: 3600,
       records: ["isomerstaging-dbca.kxcdn.com"],
     }),
   ];
