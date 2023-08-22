@@ -3,7 +3,7 @@ name: Deploy to Pulumi
 on:
   push:
     branches:
-      - feat/aws-route-53
+      - main
 
 jobs:
   deploy:
@@ -31,5 +31,5 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_HOSTED_ZONE_ID: ${{ secrets.AWS_HOSTED_ZONE_ID }}
         run: |
-          pulumi stack select indirection-layer-dev
+          pulumi stack select indirection-layer-prod
           pulumi up --yes
