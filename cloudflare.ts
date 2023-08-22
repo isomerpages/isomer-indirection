@@ -3,6 +3,7 @@ import { env } from "process";
 
 // Note: This is needed to establish the chain of trust from the parent
 // zone (isomer.gov.sg), so that DNSSEC works
+// DO NOT REMOVE, as this WILL break ALL hosted sites
 const createRecords = (zoneId: string): Record[] => {
   const records = [
     new Record("hostedon-ns1", {
