@@ -7,7 +7,6 @@ export const createRecords = (zoneId: string): Record[] => {
       name: "isomeraws",
       type: "A",
       zoneId: zoneId,
-      ttl: 3600,
       aliases: [
         {
           name: "d280dyp6teavt9.cloudfront.net",
@@ -21,7 +20,6 @@ export const createRecords = (zoneId: string): Record[] => {
       name: "isomeraws",
       type: "AAAA",
       zoneId: zoneId,
-      ttl: 3600,
       aliases: [
         {
           name: "d280dyp6teavt9.cloudfront.net",
