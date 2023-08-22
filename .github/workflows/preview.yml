@@ -33,7 +33,8 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_HOSTED_ZONE_ID: ${{ secrets.AWS_HOSTED_ZONE_ID }}
-        uses: pulumi/actions@v3
+        uses: pulumi/actions@v4
         with:
           command: preview
+          comment-on-pr: true
           stack-name: indirection-layer-prod
