@@ -1,6 +1,8 @@
 import { Record } from "@pulumi/cloudflare";
 import { env } from "process";
 
+// Note: This is needed to establish the chain of trust from the parent
+// zone (isomer.gov.sg), so that DNSSEC works
 const createRecords = (zoneId: string): Record[] => {
   const records = [
     new Record("hostedon-ns1", {
