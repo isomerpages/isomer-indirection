@@ -1,0 +1,34 @@
+import { Record } from "@pulumi/aws/route53";
+import { CLOUDFRONT_HOSTED_ZONE_ID } from "../constants";
+
+export const createRecords = (zoneId: string): Record[] => {
+  const records = [
+    new Record("designacademy.isomer.gov.sg A", {
+      name: "designacademy-isomer-gov-sg",
+      type: "A",
+      zoneId: zoneId,
+      aliases: [
+        {
+          name: "duek33y25nn5j.cloudfront.net",
+          zoneId: CLOUDFRONT_HOSTED_ZONE_ID,
+          evaluateTargetHealth: false,
+        },
+      ],
+    }),
+
+    new Record("designacademy.isomer.gov.sg AAAA", {
+      name: "designacademy-isomer-gov-sg",
+      type: "AAAA",
+      zoneId: zoneId,
+      aliases: [
+        {
+          name: "duek33y25nn5j.cloudfront.net",
+          zoneId: CLOUDFRONT_HOSTED_ZONE_ID,
+          evaluateTargetHealth: false,
+        },
+      ],
+    }),
+  ];
+
+  return records;
+};
