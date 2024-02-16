@@ -3,8 +3,8 @@ import { CLOUDFRONT_HOSTED_ZONE_ID } from "../constants";
 
 export const createRecords = (zoneId: string): Record[] => {
   const records = [
-    new Record("www.acice-asean.org A", {
-      name: "www-acice-asean-org",
+    new Record("acice-asean.org A", {
+      name: "acice-asean-org",
       type: "A",
       zoneId: zoneId,
       aliases: [
@@ -16,8 +16,8 @@ export const createRecords = (zoneId: string): Record[] => {
       ],
     }),
 
-    new Record("www.acice-asean.org AAAA", {
-      name: "www-acice-asean-org",
+    new Record("acice-asean.org AAAA", {
+      name: "acice-asean-org",
       type: "AAAA",
       zoneId: zoneId,
       aliases: [
