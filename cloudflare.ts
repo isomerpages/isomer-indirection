@@ -1,5 +1,4 @@
 import { Record } from "@pulumi/cloudflare";
-import { env } from "process";
 
 // Note: This is needed to establish the chain of trust from the parent
 // zone (isomer.gov.sg), so that DNSSEC works
@@ -62,7 +61,7 @@ const createRecords = (zoneId: string): Record[] => {
 };
 
 export async function createCloudflareRecords() {
-  const CLOUDFLARE_ZONE_ID = env.CLOUDFLARE_ZONE_ID;
+  const CLOUDFLARE_ZONE_ID = process.env.CLOUDFLARE_ZONE_ID;
   if (!CLOUDFLARE_ZONE_ID) {
     throw new Error("CLOUDFLARE_ZONE_ID must be set");
   }
