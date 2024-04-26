@@ -12,6 +12,7 @@ const createRecords = (zoneId: string): Record[] => {
       zoneId: zoneId,
       proxied: false,
       value: "ns-1053.awsdns-03.org",
+      comment: "For indirection layer, DO NOT REMOVE",
     }),
 
     new Record("hostedon-ns2", {
@@ -21,6 +22,7 @@ const createRecords = (zoneId: string): Record[] => {
       zoneId: zoneId,
       proxied: false,
       value: "ns-641.awsdns-16.net",
+      comment: "For indirection layer, DO NOT REMOVE",
     }),
 
     new Record("hostedon-ns3", {
@@ -30,6 +32,7 @@ const createRecords = (zoneId: string): Record[] => {
       zoneId: zoneId,
       proxied: false,
       value: "ns-1615.awsdns-09.co.uk",
+      comment: "For indirection layer, DO NOT REMOVE",
     }),
 
     new Record("hostedon-ns4", {
@@ -39,6 +42,7 @@ const createRecords = (zoneId: string): Record[] => {
       zoneId: zoneId,
       proxied: false,
       value: "ns-476.awsdns-59.com",
+      comment: "For indirection layer, DO NOT REMOVE",
     }),
 
     new Record("hostedon-ds", {
@@ -54,6 +58,7 @@ const createRecords = (zoneId: string): Record[] => {
         digest:
           "AC93FBD6C960986A64A96F696837F934A5839F8E187A053B5EA50E7BA13E1615",
       },
+      comment: "For indirection layer, DO NOT REMOVE",
     }),
   ];
 
