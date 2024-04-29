@@ -1,9 +1,8 @@
 import * as fs from "fs";
 import * as path from "path";
-import { env } from "process";
 
 export async function createAllRecords() {
-  const AWS_HOSTED_ZONE_ID = env.AWS_HOSTED_ZONE_ID;
+  const AWS_HOSTED_ZONE_ID = process.env.AWS_HOSTED_ZONE_ID;
   if (!AWS_HOSTED_ZONE_ID) {
     throw new Error("AWS_HOSTED_ZONE_ID must be set");
   }
