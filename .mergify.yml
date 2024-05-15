@@ -1,0 +1,15 @@
+pull_request_rules:
+  - name: Automatically merge safe indirection PRs
+    description: Merge when PR contains additions made by the backend CMS on site launch
+    conditions:
+      - base = main
+      - head = staging
+      - files~=^dns/
+      - '#commits = 1'
+      - '#files = 1'
+      - '#added-lines = 34'
+      - '#deleted-lines = 0'
+    actions:
+      review:
+        type: APPROVE
+      merge: 
