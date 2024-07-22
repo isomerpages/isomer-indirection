@@ -34,4 +34,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pulumi stack select indirection-layer-prod
-          pulumi up --skip-preview
+          pulumi up --yes
