@@ -3,26 +3,26 @@ import { CLOUDFRONT_HOSTED_ZONE_ID } from "../constants";
 
 export const createRecords = (zoneId: string): Record[] => {
   const records = [
-    new Record("gri.nhg.com.sg A", {
-      name: "gri-nhg-com-sg",
+    new Record("onestoppayroll.gov.sg A", {
+      name: "onestoppayroll-gov-sg",
       type: "A",
       zoneId: zoneId,
       aliases: [
         {
-          name: "d2co9d0i7c6qln.cloudfront.net",
+          name: "d25behx5zluwox.cloudfront.net",
           zoneId: CLOUDFRONT_HOSTED_ZONE_ID,
           evaluateTargetHealth: false,
         },
       ],
     }),
 
-    new Record("gri.nhg.com.sg AAAA", {
-      name: "gri-nhg-com-sg",
+    new Record("onestoppayroll.gov.sg AAAA", {
+      name: "onestoppayroll-gov-sg",
       type: "AAAA",
       zoneId: zoneId,
       aliases: [
         {
-          name: "d2co9d0i7c6qln.cloudfront.net",
+          name: "d25behx5zluwox.cloudfront.net",
           zoneId: CLOUDFRONT_HOSTED_ZONE_ID,
           evaluateTargetHealth: false,
         },
