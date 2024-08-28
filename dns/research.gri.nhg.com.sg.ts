@@ -9,7 +9,7 @@ export const createRecords = (zoneId: string): Record[] => {
       zoneId: zoneId,
       aliases: [
         {
-          name: "d2lbrvvv5hjjjd.cloudfront.net",
+          name: "d2humxesvml68.cloudfront.net",
           zoneId: CLOUDFRONT_HOSTED_ZONE_ID,
           evaluateTargetHealth: false,
         },
@@ -22,7 +22,7 @@ export const createRecords = (zoneId: string): Record[] => {
       zoneId: zoneId,
       aliases: [
         {
-          name: "d2lbrvvv5hjjjd.cloudfront.net",
+          name: "d2humxesvml68.cloudfront.net",
           zoneId: CLOUDFRONT_HOSTED_ZONE_ID,
           evaluateTargetHealth: false,
         },
