@@ -1,15 +1,27 @@
 pull_request_rules:
+  - name: Automatically decline PRs to main that do not come from the staging branch
+    description: The main branch cannot contain additional commits not present in
+      the staging branch.
+    conditions:
+      - base = main
+      - head != staging
+    actions:
+      review:
+        type: REQUEST_CHANGES
+      close:
+        message: Please make your changes directly on the staging branch and create the
+          pull request from the staging branch to main!
   - name: Automatically merge safe indirection PRs
     description: Merge when PR contains additions made by the backend CMS on site launch
     conditions:
       - base = main
       - head = staging
       - files~=^dns/
-      - '#commits = 1'
-      - '#files = 1'
-      - '#added-lines = 34'
-      - '#deleted-lines = 0'
+      - "#commits = 1"
+      - "#files = 1"
+      - "#added-lines = 34"
+      - "#deleted-lines = 0"
     actions:
       review:
         type: APPROVE
-      merge: 
+      merge:
