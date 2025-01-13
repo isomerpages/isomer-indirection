@@ -1,5 +1,6 @@
 import { Record } from "@pulumi/aws/route53";
 import { CLOUDFRONT_HOSTED_ZONE_ID } from "../constants";
+
 export const createRecords = (zoneId: string): Record[] => {
   const records = [
     new Record("youthplan.gov.sg A", {
@@ -14,6 +15,7 @@ export const createRecords = (zoneId: string): Record[] => {
         },
       ],
     }),
+
     new Record("youthplan.gov.sg AAAA", {
       name: "youthplan-gov-sg",
       type: "AAAA",
@@ -27,5 +29,6 @@ export const createRecords = (zoneId: string): Record[] => {
       ],
     }),
   ];
+
   return records;
 };
