@@ -16,8 +16,8 @@ export const createRecords = (zoneId: string): Record[] => {
       ],
     }),
 
-    new Record("isomer.gov.sg AAAA", {
-      name: "isomer-gov-sg",
+    new Record("open.gov.sg AAAA", {
+      name: "open-gov-sg",
       type: "AAAA",
       zoneId: zoneId,
       aliases: [
