@@ -21,7 +21,7 @@ export const createRecords = (zoneId: string): Record[] => {
     type: "CNAME",
     ttl: 120,
     zoneId: zoneId,
-    value: "isomer.gov.sg",
+    content: "isomer.gov.sg",
   });
 
   return [record1];
