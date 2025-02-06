@@ -4,7 +4,7 @@ import { CLOUDFRONT_HOSTED_ZONE_ID } from "../constants";
 export const createRecords = (zoneId: string): Record[] => {
   const records = [
     new Record("stb.gov.sg A", {
-      name: "stb.gov.sg",
+      name: "stb-gov-sg",
       type: "A",
       zoneId: zoneId,
       aliases: [
@@ -17,7 +17,7 @@ export const createRecords = (zoneId: string): Record[] => {
     }),
 
     new Record("stb.gov.sg AAAA", {
-      name: "stb.gov.sg",
+      name: "stb-gov-sg",
       type: "AAAA",
       zoneId: zoneId,
       aliases: [
