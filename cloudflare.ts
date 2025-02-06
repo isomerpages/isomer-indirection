@@ -11,7 +11,7 @@ const createRecords = (zoneId: string): Record[] => {
       ttl: 60,
       zoneId: zoneId,
       proxied: false,
-      value: "ns-1053.awsdns-03.org",
+      content: "ns-1053.awsdns-03.org",
       comment: "For indirection layer, DO NOT REMOVE",
     }),
 
@@ -21,7 +21,7 @@ const createRecords = (zoneId: string): Record[] => {
       ttl: 60,
       zoneId: zoneId,
       proxied: false,
-      value: "ns-641.awsdns-16.net",
+      content: "ns-641.awsdns-16.net",
       comment: "For indirection layer, DO NOT REMOVE",
     }),
 
@@ -31,7 +31,7 @@ const createRecords = (zoneId: string): Record[] => {
       ttl: 60,
       zoneId: zoneId,
       proxied: false,
-      value: "ns-1615.awsdns-09.co.uk",
+      content: "ns-1615.awsdns-09.co.uk",
       comment: "For indirection layer, DO NOT REMOVE",
     }),
 
@@ -41,7 +41,7 @@ const createRecords = (zoneId: string): Record[] => {
       ttl: 60,
       zoneId: zoneId,
       proxied: false,
-      value: "ns-476.awsdns-59.com",
+      content: "ns-476.awsdns-59.com",
       comment: "For indirection layer, DO NOT REMOVE",
     }),
 
