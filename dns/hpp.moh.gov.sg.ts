@@ -3,26 +3,26 @@ import { CLOUDFRONT_HOSTED_ZONE_ID } from "../constants";
 
 export const createRecords = (zoneId: string): Record[] => {
   const records = [
-    new Record("predict.sg A", {
-      name: "predict-sg",
+    new Record("hpp.moh.gov.sg A", {
+      name: "hpp-moh-gov-sg",
       type: "A",
       zoneId: zoneId,
       aliases: [
         {
-          name: "d3lqwdig5pofwg.cloudfront.net",
+          name: "d36xl3ivusvxgs.cloudfront.net",
           zoneId: CLOUDFRONT_HOSTED_ZONE_ID,
           evaluateTargetHealth: false,
         },
       ],
     }),
 
-    new Record("predict.sg AAAA", {
-      name: "predict-sg",
+    new Record("hpp.moh.gov.sg AAAA", {
+      name: "hpp-moh-gov-sg",
       type: "AAAA",
       zoneId: zoneId,
       aliases: [
         {
-          name: "d3lqwdig5pofwg.cloudfront.net",
+          name: "d36xl3ivusvxgs.cloudfront.net",
           zoneId: CLOUDFRONT_HOSTED_ZONE_ID,
           evaluateTargetHealth: false,
         },
